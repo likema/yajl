@@ -22,5 +22,8 @@ override_dh_auto_configure:
 override_dh_auto_install: debian/libyajl2.install debian/libyajl-dev.install
 	dh_auto_install
 
+override_dh_strip:
+	dh_strip --dbg-package=libyajl2-dbg
+
 %.install: %.install.in
 	sed 's/@DEB_HOST_MULTIARCH@/$(DEB_HOST_MULTIARCH)/' $< > $@
