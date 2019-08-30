@@ -1,21 +1,18 @@
-=====================
-YAJL 2
-=====================
+# YAJL 2
 
 This is a fork of YAJL 2 (https://github.com/lloyd/yajl). It maily aims at
 better platform building support.
 
-Building
-=====================
+## Building
 
 The following are cmake building options:
 
- * **DISABLE_DOCS**: Disable building docs
- * **DISABLE_TESTS**: Disable building tests and examples
- * **DISABLE_TOOLS**: Disable building tools
- * **DISABLE_STATIC**: Disable building static
- * **DISABLE_SHARED**: Disable building shared
- * **DISABLE_SO_VERSION**: Disable so version
+ * `DISABLE_DOCS`: Disable building docs
+ * `DISABLE_TESTS`: Disable building tests and examples
+ * `DISABLE_TOOLS`: Disable building tools
+ * `DISABLE_STATIC`: Disable building static
+ * `DISABLE_SHARED`: Disable building shared
+ * `DISABLE_SO_VERSION`: Disable so version
 
 You can also get them by
 
@@ -24,8 +21,7 @@ cd yajl
 cmake -LH
 ```
 
-Ubuntu/Debian
----------------------
+### Ubuntu/Debian
 
 ```shell
 sudo apt-get install -y cmake
@@ -34,8 +30,7 @@ cmake -G"Unix Makefiles"
 make
 ```
 
-Fedora/Red Hat/CentOS
----------------------
+### Fedora/Red Hat/CentOS
 
 ```shell
 sudo yum install -y cmake
@@ -44,8 +39,7 @@ cmake -G"Unix Makefiles"
 make
 ```
 
-AIX
----------------------
+### AIX
 
 Please get CMake RPM (http://www.perzl.org/aix/index.php?n=Main.Cmake)
 
@@ -55,8 +49,7 @@ cmake -G"Unix Makefiles"
 make
 ```
 
-Windows
----------------------
+### Windows
 
 Please get CMake (http://www.cmake.org)
 
@@ -71,11 +64,9 @@ cmake -G"Visual Studio 10"
 ```
 
 
-Packaging
-=====================
+## Packaging
 
-Ubuntu/Debian
----------------------
+### Ubuntu/Debian
 
 ```shell
 sudo apt-get install -y build-essential cmake doxygen
@@ -83,8 +74,7 @@ cd yajl
 dpkg-buildpackage -us -uc -rfakeroot
 ```
 
-Fedora/Red Hat/CentOS
----------------------
+### Fedora/Red Hat/CentOS
 
 ```shell
 sudo yum install -y cmake doxygen
@@ -99,8 +89,7 @@ Additionally, you can build YAJL i686 rpm on x86_64 platform as
 CC="gcc -m32" rpmbuild -ba --target=i686 yajl.spec
 ```
 
-AIX
----------------------
+### AIX
 
 Please get CMake RPM (http://www.perzl.org/aix/index.php?n=Main.Cmake)
 
